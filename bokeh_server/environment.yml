@@ -1,0 +1,8 @@
+name: bokeh_server
+dependencies:
+ - numpy
+ - pandas
+ - bokeh
+ - scikit-learn
+ - openpyxl
+ - xlrd

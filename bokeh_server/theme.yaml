@@ -1,0 +1,10 @@
+attrs:
+    Figure:
+        background_fill_color: '#F9F9F9'
+        border_fill_color: '#F8F8F8'
+    Title:
+        text_color: "black"
+        text_font_size: "15pt"
+        align: "center"
+    Tabs:
+        background: '#F0F0FF'

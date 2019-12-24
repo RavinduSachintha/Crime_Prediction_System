@@ -1,0 +1,21 @@
+<!-- Tab 05 -->
+<div class="tab-pane fade show text-center" id="prediction" role="tabpanel">
+    <div class="row my-3 mx-2">
+        <div class="col-6">
+            <div class="card shadow-sm">
+                <div class="card-header h3">Querying Form</div>
+                <div class="card-body">
+                    {{ embed(roots.prediction_ctrl) }}
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body bg-warning text-center text-white border border-danger shadow-sm rounded">
+                    <h1 class="mt-5">Danger<br>Level</h1>
+                    <span class="mb-4">{{ embed(roots.prediction_output) }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

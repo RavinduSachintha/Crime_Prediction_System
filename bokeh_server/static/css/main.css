@@ -1,0 +1,46 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.btnSubmit {
+    border-radius: 0 !important
+}
+
+.header-banner {
+    background-image: url('../images/logo-banner.png');
+    background-size: cover;
+    height: 7em;
+    width: auto;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 2px black;
+}
+
+.tab-pane {
+    min-height: 25em;
+}
+
+.dashboard-img {
+    height: 20em;
+    width: auto;
+}
+
+.card-padding {
+    padding: 5px !important;
+}
+
+label,.bk-slider-title  {
+    color:white !important;
+    font-weight: bold !important;
+}
+
+.bk-slider-title span {
+    color:black !important;
+    font-weight: normal !important;
+}
+
+.bk-btn-success {
+    font-size: 1rem !important;
+    color: white !important;
+    font-weight: 400 !important;
+}

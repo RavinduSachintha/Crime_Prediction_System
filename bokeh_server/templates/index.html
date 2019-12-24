@@ -1,0 +1,41 @@
+{% extends base %}
+
+{% block preamble %}
+    <link rel="stylesheet" href="bokeh_server/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bokeh_server/static/css/main.css">
+
+    <link rel="stylesheet" href="bokeh_server/static/leaflet/leaflet.css"/>
+    <script src="bokeh_server/static/leaflet/leaflet.js"></script>
+
+    <script src="bokeh_server/static/bokeh/bokeh-1.4.0.min.js"></script>
+    <script src="bokeh_server/static/bokeh/bokeh-widgets-1.4.0.min.js"></script>
+    <script src="bokeh_server/static/bokeh/bokeh-tables-1.4.0.min.js"></script>
+    <script src="bokeh_server/static/bokeh/bokeh-gl-1.4.0.min.js"></script>
+    <script src="bokeh_server/static/bokeh/bokeh-api-1.4.0.min.js"></script>
+
+    <script src="bokeh_server/static/jquery/jquery-3.4.1.min.js"></script>
+    <script src="bokeh_server/static/popper/popper.min.js"></script>
+    <script src="bokeh_server/static/bootstrap/js/bootstrap.min.js"></script>
+
+    <title> SL - Crime Levels Predicting System </title>
+{% endblock %}
+
+{% block contents %}
+    <div class="container-fluid p-0">
+        {% include '/components/title-banner.html' %}
+        <div class="row mt-4 mr-4 p-0">
+            {% include '/components/sidebar.html' %}
+            <main class="col-9">
+                <div class="card tab-content shadow">
+                    {% include '/components/tab1-content.html' %}
+                    {% include '/components/tab2-content.html' %}
+                    {% include '/components/tab3-content.html' %}
+                    {% include '/components/tab4-content.html' %}
+                    {% include '/components/tab5-content.html' %}
+                </div>
+            </main>
+        </div>
+    </div>
+    {% include '/components/modal.html' %}
+    <script src="bokeh_server/static/js/main.js"></script>
+{% endblock %}
